@@ -1,0 +1,46 @@
+.searchbar-wrapper {
+  position: relative;
+}
+
+.searchbar-wrapper input {
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  width: 200px;
+  border: none;
+  color: #c0b5b5;
+  background-color: #191919;
+}
+.searchbar-wrapper input:focus {
+  outline: 1px solid rgb(73, 71, 71);
+}
+
+.suggestions {
+  position: absolute;
+  top: 38px;
+  right:-45px;
+  width: 450px;
+  background-color: #191919;
+  border-radius: 14px;
+  max-height: 200px;
+   border: none;
+  overflow-y: auto;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.suggestions li {
+  padding: 5px 8px;
+  margin: 8px 15px;
+  color: rgb(209, 205, 205);
+  cursor: pointer;
+  border-bottom: .5px solid rgb(36, 34, 34);
+}
+
+.suggestions li:hover {
+  background-color: #333;
+  border-radius: 5px;
+}

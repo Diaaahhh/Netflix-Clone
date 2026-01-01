@@ -1,0 +1,43 @@
+.profile-container {
+  max-width: 500px;
+  margin: auto;
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.profile-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+}
+
+.update-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #e50914;
+}

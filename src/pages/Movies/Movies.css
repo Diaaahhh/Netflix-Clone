@@ -1,0 +1,72 @@
+.movies-page {
+  padding: 20px;
+  color: white;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.movies-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.genres-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.genre-card {
+  padding: 10px 20px;
+  background-color: #222;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.genre-card:hover,
+.active-genre {
+  background-color: #e50914;
+  color: #fff;
+}
+
+.genre-movie-heading {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.movie-card {
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+}
+
+.movie-name {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.no-movie-text {
+  text-align: center;
+  margin-top: 20px;
+  color: gray;
+}

@@ -1,0 +1,54 @@
+/* src/pages/TVPlayer/TVPlayer.css */
+.tvplayer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.back-button {
+  width: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.tvplayer_info {
+  margin-top: 20px;
+  color: #ccc;
+}
+
+.not-found {
+  color: #f00;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.recommendation-section {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.recommendation-section h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.recommended-card {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.recommended-card:hover {
+  transform: scale(1.05);
+}
+
+.recommended-card img {
+  width: 100%;
+  border-radius: 10px;
+}

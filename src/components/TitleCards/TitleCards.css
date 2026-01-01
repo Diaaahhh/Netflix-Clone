@@ -1,0 +1,123 @@
+.title_cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* Section heading */
+.title_cards h2 {
+    margin-bottom: 8px;
+}
+
+/* Horizontal scrolling card list */
+.card_list {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for better UX */
+.card_list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Each card */
+.card {
+    position: relative;
+    width: 240px;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: white;
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    height: 135px; /* 🔧 Consistent height for all cards */
+    object-fit: cover; /* Maintain aspect ratio, crop overflow */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #222; /* Fallback if image doesn't load */
+}
+
+/* Overlay container for movie info */
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.😎, transparent);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-sizing: border-box;
+    min-height: 50px; /* 🔧 Prevent collapse when content is short */
+}
+
+/* Movie title */
+.movie-title {
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Movie rating */
+.movie-rating {
+    font-size: 13px;
+    font-weight: 500;
+    color: gold;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 800px) {
+    .title_cards {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .title_cards h2 {
+        font-size: 20px;
+    }
+
+    .card {
+        width: 200px;
+    }
+
+    .card img {
+        height: 115px;
+    }
+
+    .movie-title {
+        font-size: 12px;
+    }
+
+    .movie-rating {
+        font-size: 12px;
+    }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 500px) {
+    .title_cards h2 {
+        font-size: 15px;
+    }
+
+    .card {
+        width: 165px;
+    }
+
+    .card img {
+        height: 100px;
+    }
+
+    .movie-title {
+        font-size: 10px;
+    }
+
+    .movie-rating {
+        font-size: 10px;
+    }
+}

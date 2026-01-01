@@ -1,0 +1,85 @@
+.player {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* room for back arrow */
+  background-color: #000;
+  color: white;
+}
+
+.player iframe {
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.player img {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 10; /* ensure it's above everything */
+}
+
+.player_info {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.recommendation-section {
+  width: 90%;
+  max-width: 1200px;
+  padding: 1rem;
+  margin-top: 2rem;
+    position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+
+}
+
+.recommendation-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.recommended-card {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.recommended-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+   position: relative;
+  z-index: 1;
+}
+
+.recommended-card img:hover {
+  transform: scale(1.05);
+}
+
+.recommended-card p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
